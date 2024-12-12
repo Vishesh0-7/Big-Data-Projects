@@ -1,0 +1,24 @@
+Missing Pieces:	
+Position Validation:	
+- Valid Positions:	
+  - White King (E1)	
+  - White Queen (D1)	
+  - White Rook (A1), (H1)	
+  - White Bishop (C1), (F1)	
+  - White Knight (B1), (G1)	
+  - White Pawns (A2, B2, C2, D2, E2, F2, G2, H2)	
+  - Black King (E8)	
+  - Black Queen (D8)	
+  - Black Rook (A8), (H8)	
+  - Black Bishop (C8), (F8)	
+  - Black Knight (B8), (G8)	
+  - Black Pawns (A7, B7, C7, D7, E7, F7, G7, H7)	
+Errors Detected:	
+- Invalid Position: "White Knight B9" - Position must be within A1 to H8.	
+- Invalid Position: "Black Bishop A0" - Position must be within A1 to H8.	
+- Invalid Position: "White Rook Z1" - Position must be within A1 to H8.	
+- Invalid Position: "Black Pawn I7" - Position must be within A1 to H8.	
+- Invalid Position: "White Queen E9" - Position must be within A1 to H8.	
+- Invalid Position: "Black Rook H8" - Position already occupied by "Black Rook".	
+- Invalid Position: "White Pawn A2" - Position already occupied by "White Pawn".	
+- Invalid Position: "White Queen D1" - Position already occupied by "White Queen".	

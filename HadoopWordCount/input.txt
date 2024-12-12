@@ -1,0 +1,30 @@
+Hadoop
+Data
+Node
+Cloud
+MapReduce
+Distributed
+Cluster
+Algorithm
+Machine Learning
+Pseudocode
+Vishesh Raju
+Java
+Input
+Output
+Record
+Query
+Index
+Compute
+Instance
+Scale
+Hadoop
+Data
+Vishesh Raju
+Node
+MapReduce
+Cluster
+Algorithm
+Java
+Input
+Output

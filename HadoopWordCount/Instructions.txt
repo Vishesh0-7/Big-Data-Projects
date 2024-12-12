@@ -1,0 +1,61 @@
+Instructions for Running the MapReduce WordCount Job
+
+1. Set Up Hadoop and Java
+Ensure Hadoop is installed and running in pseudo-distributed or fully distributed mode and also Install Java, and set all the environment variables.
+
+2. Start Hadoop Cluster
+If Starting for the first time format the Namenode using:
+
+hdfs namenode -format
+
+Start the Hadoop Distributed File System (HDFS) and YARN by running the following commands in your command prompt(administrator):
+
+start-dfs.cmd
+start-yarn.cmd
+
+Run the jps Command to see if the Namenode, Datanode, NodeManagers and the ResourceManager are active.
+
+3. Create Input Directory in HDFS
+Create a directory in HDFS where the input file will be stored:
+
+hadoop fs -mkdir /input
+
+4. Add the Input File to HDFS
+Copy the `Input.txt` file from your local machine to the input directory in HDFS:
+
+hadoop fs -put C:\Users\vishe\Documents\Files\input.txt /input
+
+Be Sure to put the right path above and then run the command.
+
+5. Run the MapReduce WordCount Job
+Execute the WordCount MapReduce job by specifying the input directory and the output directory, and change the path to where your Jar file is stored.
+
+hadoop jar C:\Users\vishe\Desktop\JarFiles\WordCountMapReduce.jar com.mapreduce.wc/WordCount /input/input.txt /output
+
+6. Check the Output Files
+After the job completes, list the contents of the output directory to verify the presence of the `part-r-00000` file, which contains the word count results:
+
+hadoop fs -ls /output
+
+7. Download the Output
+Copy the result file from HDFS to your local file system:
+
+hadoop dfs -get /output/part-r-00000 C:\Users\vishe\Documents\Files\output.txt
+
+Change the path to wherever you want to store the output file
+
+8. View the Output
+Open the `Output.txt` file to see the word counts:
+
+hadoop dfs -cat /output/*
+
+9. Stop the Hadoop Cluster
+After completing the job, stop the Hadoop services:
+
+stop-yarn.cmd
+stop-dfs.cmd
+
+Thank You..
+By Vishesh Raju
+
+
