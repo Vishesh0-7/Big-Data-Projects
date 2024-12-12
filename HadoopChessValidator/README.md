@@ -1,8 +1,9 @@
-# Hadoop Word Count
+# Chess Validator
 
 ## Description
-This project demonstrates a simple **Word Count** program implemented using **Apache Hadoop MapReduce**. The program processes a large text file and counts the occurrences of each word, showcasing the power of distributed data processing.
+The **Chess Validator** is a program designed to analyze chessboard positions and validate them according to the rules of chess. It identifies missing pieces, verifies positions, and detects errors such as invalid placements, conflicts, and duplicates.
 
-The project is designed to run on a Hadoop cluster, and it can handle large datasets efficiently by leveraging the MapReduce paradigm.
+This project demonstrates the use of **MapReduce** to process chess position data on a distributed system efficiently.
 
 ## Folder Structure
+
